@@ -27,3 +27,7 @@ gaitober" => "gato"
 
 - La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
 - El resultado debe ser mostrado en la pantalla.
+
+## ***Insignia por concluir el challenge***
+
+![image](https://user-images.githubusercontent.com/105742243/210182054-d30bb5d4-4ac8-45c8-bef7-edf544675527.png)
