@@ -27,6 +27,7 @@ buttonEncrip.onclick= function btnEncriptar() {  // Esta función reemplaza cier
 buttonDesencrip.onclick = function btnDesencriptar() {// Esta función reemplaza ciertos reemplazos en una entrada de texto 
 	output = document.getElementById("textInput"); //    con las letras originales correspondientes en una matriz
 	output = String(output.value);
+	console.log("Entra")
 
 	output = output.toLowerCase();
 	let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -40,6 +41,7 @@ buttonDesencrip.onclick = function btnDesencriptar() {// Esta función reemplaza
 	input = document.getElementById("textInputProcess");
 	input.value = output;
 	document.getElementById("textInputProcess").style.background = "white";
+	document.getElementById("textInputProcess").click();
 }
 
 buttonCopy.onclick = function copy() {  // Esta función copia el resultado del texto encriptado o desencriptado
