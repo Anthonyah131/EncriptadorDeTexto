@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="">
+    </header>
+
+    <main>
+        <section class="inputSection">
+            <div class="textContainer">
+                <textarea class="textInput" id="textInput" placeholder="Ingrese el texto aqui" ></textarea>
+            </div>
+            <div class="containerOpcion">
+                <div class="advertencia">
+                    <img src="images/advertencia.svg" alt="">
+                    <label>Solo letras minusculas y sin acentos</label>
+                </div>
+
+                <div class="buttonsContainer">
+                    <button class="btn btnEncrip" id="buttonEncrip">Encriptar</button>
+                    <button class="btn btnDesencrip" id="buttonDesencrip">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="outputSection">
+            <div class="textProcess" id="textProcess">
+                <div class="imagen" id="imagen">
+                    <img class="muneco" src="images/muneco.svg" alt="noo">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+                
+                <textarea class="textInputProcess" id="textInputProcess"></textarea>
+                <button class="btn btnCopy" id="buttonCopy">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Create by Anthony Avila</p>
+        <div class="icon">
+            <a href="https://github.com/Anthonyah131">
+                <img src="./images/github.svg" alt="github link"></a>
+        </div>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/anthony-%C3%A1vila-hern%C3%A1ndez/">
+                <img src="./images/linkedin.svg" alt="linkedin link"></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="encriptador.js"></script>
+</body>
+</html>

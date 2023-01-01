@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+}
+
+header img{
+    margin-left: 5%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #0A3871;
+    padding-bottom: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.textContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.textInput {
+    background-color: transparent;
+    border: none;
+    min-height: 150px;
+    width: 90%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #0A3871;
+}
+
+.textInput:focus {
+	outline: none;
+}
+
+.containerOpcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.advertencia {
+    margin-left: 5%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+
+.advertencia > label {
+    margin-left: 5px;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+.btnEncrip {
+    margin: 2%;
+    width: 340px;
+    height: 67px;
+    background-color:#0A3871;
+    color: #E5E5E5;
+}
+
+.btnDesencrip {
+    margin: 2%;
+    width: 340px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.textProcess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 5px;
+    width: 90%;
+    height: 180px;
+    background: #FFFFFF;
+}
+
+.textProcess h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.textProcess p {
+    text-align: center;
+}
+
+.imagen {
+    position: relative;
+}
+
+.muneco {
+    width: 90%;
+    display: none;
+}
+
+.textInputProcess {
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    border-radius: 25px;
+    height: 180px;
+    width: 90%;
+    display: none;
+}
+
+.textInputProcess:focus {
+	outline: none;
+	background: white;
+}
+
+.btnCopy {
+	height: 48px;
+	width: 80%;
+	background-color: white;
+	color: var(--azul-fuerte);
+	border-radius: 14px;
+	border: 1px solid #0A3871;
+	display: none;
+}
+
+.btnCopy:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    main {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .inputSection {
+        height: 70vh;
+        width: 60%;
+    }
+
+    .advertencia {
+        font-size: 14px;
+    }
+
+    .muneco {
+        display: inline;
+    }
+
+    .outputSection {
+        height: 70vh;
+        width: 40%;
+    }
+
+    .textProcess {
+        height: auto;
+    }
+
+    .textInputProcess {
+        text-align: center;
+        border: none;
+        border-radius: 25px;
+        height: 90%;
+        width: 90%;
+    }
+
+    .textInputProcess::placeholder {
+        text-align: center;
+        padding-top: 100%;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+    }
+  }
